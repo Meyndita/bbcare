@@ -20,6 +20,16 @@
               <label>No. Telepon</label>
               <input type="text" id="telepon" name="telepon" class="form-control">
             </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label>Alamat</label>
+              <input type="text" id="alamat" name="alamat" class="form-control">
+            </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label>Alamat Email</label>
+              <input type="email" id="email" name="email" class="form-control">
+            </div>
           </div>
 
           <div class="mt-3 mx-auto">

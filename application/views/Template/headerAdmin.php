@@ -40,17 +40,17 @@
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link" href="<?=base_url('Admin/addPesanan')?>">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Tambah Pesanan</span></a>
-            </li>
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link" href="<?=base_url('Admin/pelanggan')?>">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Pelanggan</span></a>
+            </li>
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="<?=base_url('Admin/addPesanan')?>">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Pesanan</span></a>
             </li>
             <!-- Nav Item - Charts -->
             <li class="nav-item">

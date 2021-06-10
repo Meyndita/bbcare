@@ -21,6 +21,18 @@
               <input type="text" id="telepon" name="telepon" class="form-control" placeholder="No. Telepon" value="<?=$get->telepon?>">
             </div>
           </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label>Alamat</label>
+              <input type="text" id="telepon" name="telepon" class="form-control" placeholder="Alamat" value="<?=$get->alamat?>">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label>Email</label>
+              <input type="text" id="telepon" name="telepon" class="form-control" placeholder="Email" value="<?=$get->email?>">
+            </div>
+          </div>
 
           <div class="mt-3 mx-auto">
             <input class="btn btn-primary btn-round" name="submit" type="submit" value="Update">

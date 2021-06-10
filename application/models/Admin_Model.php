@@ -8,19 +8,21 @@
         }
 
         public function deletePelanggan($id) {
-            $this->db->where('id', $id)->delete('pelanggan');
+            $this->db->where('id_pelanggan', $id)->delete('pelanggan');
         }
 
         public function getPelanggan($id){
-            return $this->db->where('id', $id)->get('pelanggan')->row();
+            return $this->db->where('id_pelanggan', $id)->get('pelanggan')->row();
         }
 
         public function updatePelanggan($id){
             $post = $this->input->post();
             $this->nama = $post['nama'];
             $this->telepon = $post['telepon'];
+            $this->telepon = $post['alamat'];
+            $this->email = $post['email'];
 
-            $this->db->where('id', $id)->update('pelanggan', $this);
+            $this->db->where('id_pelanggan', $id)->update('pelanggan', $this);
             
             if ($this->db->affected_rows() > 0) {
                 return TRUE;
@@ -32,9 +34,11 @@
         public function insertPelanggan($id) {
             if ($this->input->post('submit')) {
             $array = array(
-                "id"=>$this->input->post('id', TRUE),
+                "id"=>$this->input->post('id_pelanggan', TRUE),
                 "nama"=>$this->input->post('nama', TRUE),
                 "telepon"=>$this->input->post('telepon', TRUE),
+                "alamat"=>$this->input->post('alamat', TRUE),
+                "email"=>$this->input->post('email', TRUE),
                 // "id_store"=>$id
             );
             }

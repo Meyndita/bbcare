@@ -46,6 +46,8 @@
 			
 			$this->form_validation->set_rules('nama', 'Nama Pelanggan', 'trim|required');
 			$this->form_validation->set_rules('telepon', 'Telepon', 'trim|required');
+			$this->form_validation->set_rules('alamat', 'Alamat', 'trim|required');
+			$this->form_validation->set_rules('email', 'Email', 'trim|required');
 			
 			if ($this->form_validation->run() == TRUE) {
 				$this->Admin_Model->updatePelanggan($id);	
@@ -63,6 +65,8 @@
 			// $id = $this->session->userdata('id_store');
 			$this->form_validation->set_rules('nama', 'Nama Pelanggan', 'trim|required');
 			$this->form_validation->set_rules('telepon', 'No. Telepon', 'trim|required');
+			$this->form_validation->set_rules('alamat', 'Alamat', 'trim|required');
+			$this->form_validation->set_rules('email', 'Email', 'trim|required');
 			
 			if ($this->form_validation->run() == TRUE) {
 				$this->Admin_Model->insertPelanggan($id);
