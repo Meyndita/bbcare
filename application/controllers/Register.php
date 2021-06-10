@@ -248,8 +248,8 @@
 		  $verification_key = md5(rand());
 		  $data = array(
 			'nama'					=> $this->input->post('nama'),
-			'telepon'				=> $this->input->post('telepon', true),
-			'alamat'				=> $this->input->post('alamat', true),
+			'telepon'				=> $this->input->post('telepon'),
+			'alamat'				=> $this->input->post('alamat'),
 			'email'					=> $this->input->post('email', true),
 			'verification_key'      =>  $verification_key
 		  );
@@ -315,7 +315,7 @@
 				  );
 				  $this->db->insert('user', $userrandom);
 				  $resultText = "Registrasi berhasil";
-				  $message = "<p>Username dan password sementara untuk admin</p>
+				  $message = "<p>Username dan password sementara untuk pelanggan</p>
 				  <br>
 				  <p>username \t\t\t :" . $userrandom['username'] . "</p>
 				  <p>password \t\t\t :" . $userrandom['password'] . "</p>
